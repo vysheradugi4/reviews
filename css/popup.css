@@ -1,76 +1,17 @@
-html,
-body {
-    padding: 0;
-    margin: 0;
+body,
+html {
+    width: 420px;
     height: 450px;
-    width: 350px;
+    background-color: rgb(0, 75, 100);
     overflow: hidden;
+    font-size: 14px;
 }
 
-.header {
-    z-index: 10;
-    width: 100%;
-    height: 40px;
-    background-color: #fafafa;
-    border-bottom: 1px solid #c0c0c0;
-    position: fixed;
-    top: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex
-}
-
-.header__title {
-    flex: 1;
-    font-size: 20px;
-}
-
-.header__input {
-    flex: 2;
-    border-radius: 5px;
-}
-.content {
-    margin-top: 40px;
-    position: relative;
-    height: calc(100% - 40px);
-    overflow-y: scroll;
-}
-
-.content__raiting {
-    width: 100%;
-    padding: 10px;
-}
-
-.icon {
-    margin: 1px;
-    float: left;
-    width: 16px;
-    height: 16px;
-    -webkit-mask: url(../img/star.svg) no-repeat center;
-}
-.icon__positive {
-    background-color: goldenrod; 
-}
-
-.icon__negative {
-    background-color: gray;
-}
-
-.content__card {
-    width: 100%;
-    padding: 10px;
-    background-color: #fafafa;
-    border-top: 1px solid #c0c0c0;
-}
-.empty-space {
-    height: 20px;
-}
-.footer {
-    position: fixed;
-    width: 100%;
-    padding: 5px 10px;
+.wrapper {
+    width: 410px;
+    height: 440px;
+    margin: 5px;
+    border-radius: .25rem;
     background-color: white;
-    border-top: 1px solid #c0c0c0;
-    bottom: 0px;
-    text-align: right;
 }
+
