@@ -4,6 +4,7 @@ body {
     margin: 0;
     height: 450px;
     width: 350px;
+    overflow: hidden;
 }
 
 .header {
@@ -12,10 +13,11 @@ body {
     height: 40px;
     background-color: #fafafa;
     border-bottom: 1px solid #c0c0c0;
-    display: flex;
     position: fixed;
+    top: 0px;
     padding-left: 10px;
     padding-right: 10px;
+    display: flex
 }
 
 .header__title {
@@ -30,6 +32,8 @@ body {
 .content {
     margin-top: 40px;
     position: relative;
+    height: calc(100% - 40px);
+    overflow-y: scroll;
 }
 
 .content__raiting {
@@ -37,11 +41,29 @@ body {
     padding: 10px;
 }
 
+.icon {
+    margin: 1px;
+    float: left;
+    width: 16px;
+    height: 16px;
+    -webkit-mask: url(../img/star.svg) no-repeat center;
+}
+.icon__positive {
+    background-color: goldenrod; 
+}
+
+.icon__negative {
+    background-color: gray;
+}
+
 .content__card {
     width: 100%;
     padding: 10px;
     background-color: #fafafa;
     border-top: 1px solid #c0c0c0;
+}
+.empty-space {
+    height: 20px;
 }
 .footer {
     position: fixed;
