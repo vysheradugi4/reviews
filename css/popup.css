@@ -43,7 +43,6 @@ a.nav-link {
 
 .rating {
   text-align: center;
-  max-width: 100px;
   background-color: #0af;
   border-radius: 25px;
 }
@@ -64,7 +63,7 @@ a.nav-link {
 .review-card {
   border-top: 1px solid #c0c0c0;
   background-color: #fafafa;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
 }
 
 .review-card__title {
@@ -73,7 +72,27 @@ a.nav-link {
 
 .review-card__rating {
   text-align: center;
-  max-width: 100px;
-  background-color: #0af;
-  border-radius: 25px;
+  background-color: #c0c0c0;
+  border-bottom-right-radius: 25px;
+  height: 25px;
+}
+
+.review-card__rating-icon {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  -webkit-mask: url(../img/star.svg) no-repeat center;
+}
+
+.review-card__rating-value {
+  color: white;
+  font-weight: 600;
+}
+
+.review-card__date {
+  color: gray;
+}
+
+.review-card__content {
+  margin-top: 10px;
 }
