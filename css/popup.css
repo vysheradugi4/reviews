@@ -1,17 +1,15 @@
 body,
 html {
   width: 450px;
-  height: 450px;
+  height: 550px;
   background-color: #0af;
   overflow: hidden;
   font-size: 14px;
 }
 
-.wrapper {
+.main-container {
   width: 440px;
-  height: 440px;
-  margin: 5px;
-  border-radius: .5rem;
+  height: 540px;
   background-color: white;
   overflow-y: auto;
 }
